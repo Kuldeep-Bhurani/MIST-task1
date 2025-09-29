@@ -47,7 +47,10 @@ const ItemText = styled.div`
 
 const ButtonGroup = styled.div`
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
 `
 
 const LeftButton = styled.div`
