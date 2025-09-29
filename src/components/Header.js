@@ -55,6 +55,7 @@ const Container = styled.div`
     right: 0;
     z-index: 10;
     background: rgba(256, 256, 256, 0.6);
+    max-width: 100vw;
 `
 
 const MenuGrp = styled.div`
