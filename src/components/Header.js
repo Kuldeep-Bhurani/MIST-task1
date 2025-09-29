@@ -62,23 +62,26 @@ const Container = styled.div`
 
 const MenuGrp = styled.div`
     display: flex;
+    justify-content: space-between;
+    min-width: 25vw;
+    align-items: center;
     text-transform: uppercase;
     div{
         font-weight: 600;
-        padding: 0 10px;
         cursor: pointer;
     }
     `
 
 const RightMenu = styled.div`
     display: flex;
+    min-width: 6vw;
+    justify-content: space-between;
+    align-items: center;
     a{
         text-transform: uppercase;
         font-weight: 600;
-        padding-right: 10px;
         img{
             height: 25px; 
-            padding-right: 10px;
         }
     }
 `
