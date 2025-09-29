@@ -54,7 +54,7 @@ const Container = styled.div`
     left: 0;
     right: 0;
     z-index: 10;
-        background: rgba(256, 256, 256, 0.6);
+    background: rgba(256, 256, 256, 0.6);
 `
 
 const MenuGrp = styled.div`
@@ -63,6 +63,9 @@ const MenuGrp = styled.div`
     min-width: 25vw;
     align-items: center;
     text-transform: uppercase;
+    @media (max-width: 1000px){
+        display: none;
+    }
     div{
         font-weight: 600;
         cursor: pointer;
@@ -74,6 +77,9 @@ const RightMenu = styled.div`
     min-width: 6vw;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 1000px){
+        min-width: 25vw; 
+     }
     a{
         text-transform: uppercase;
         font-weight: 600;
