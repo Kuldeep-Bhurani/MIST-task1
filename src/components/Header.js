@@ -17,8 +17,8 @@ const Header = () => {
                 <div>Model Y</div>
             </MenuGrp>
             <RightMenu>
-                <a href='https://shop.tesla.com/'>Shop</a>
-                <a href='https://auth.tesla.com/oauth2/v1/authorize?redirect_uri=https://www.tesla.com/teslaaccount/owner-xp/auth/callback&response_type=code&client_id=ownership&scope=offline_access%20openid%20ou_code%20email&audience=https%3A%2F%2Fownership.tesla.com%2F&locale=en-US'>Tesla Account</a>
+                <a href='https://shop.tesla.com/'><img src="/images/cart-shopping-solid-full.svg" alt="Shop" /></a>
+                <a href='https://auth.tesla.com/oauth2/v1/authorize?redirect_uri=https://www.tesla.com/teslaaccount/owner-xp/auth/callback&response_type=code&client_id=ownership&scope=offline_access%20openid%20ou_code%20email&audience=https%3A%2F%2Fownership.tesla.com%2F&locale=en-US'><img src="/images/user-solid-full.svg" alt="Tesla Account" /></a>
                 <MenuIconContainer>
                     <MenuIcon onClick={() => setBurgerStatus(true)} />
                 </MenuIconContainer>
@@ -54,6 +54,10 @@ const Container = styled.div`
     left: 0;
     right: 0;
     z-index: 10;
+    transition: background-color 0.4s ease-in-out;
+    &:hover{
+        background: rgba(256, 256, 256, 0.6);
+    }
 `
 
 const MenuGrp = styled.div`
@@ -72,6 +76,10 @@ const RightMenu = styled.div`
         text-transform: uppercase;
         font-weight: 600;
         padding-right: 10px;
+        img{
+            height: 25px; 
+            padding-right: 10px;
+        }
     }
 `
 
