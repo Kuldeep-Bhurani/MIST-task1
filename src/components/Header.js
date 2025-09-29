@@ -54,10 +54,7 @@ const Container = styled.div`
     left: 0;
     right: 0;
     z-index: 10;
-    transition: background-color 0.4s ease-in-out;
-    &:hover{
         background: rgba(256, 256, 256, 0.6);
-    }
 `
 
 const MenuGrp = styled.div`
